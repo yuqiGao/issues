@@ -2,6 +2,9 @@
 ## tensorflow
 ##### Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.1: cannot open shared object file: No such file or directory
 Solved: conda install cudatoolkit=10.1
+##### Could not load dynamic library 'libcudnn.so.7'; dlerror: libcudnn.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/share/local/slocal/lib:/usr/local/cuda/lib64:/share/local/lib:$LD_LIBRARY_PATH
+Not solve: conda install
+Solved: c
 
 ## tensorflow-hub
 ##### RuntimeError: Exporting/importing meta graphs is not supported when eager execution is enabled. No graph exists when eager execution is enabled.
