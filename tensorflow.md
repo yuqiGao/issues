@@ -3,8 +3,11 @@
 ##### Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.1: cannot open shared object file: No such file or directory
 Solved: conda install cudatoolkit=10.1
 ##### Could not load dynamic library 'libcudnn.so.7'; dlerror: libcudnn.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/share/local/slocal/lib:/usr/local/cuda/lib64:/share/local/lib:$LD_LIBRARY_PATH
-Not solve: conda install
-Solved: c
+Not solve: conda install cudnn
+Solved: conda install -c anaconda cudnn
+##### Unable to Enable Tensorflows Eager execution: AttributeError: module 'tensorflow' has no attribute 'enable_eager_execution'
+Solved: tf.enable_eager_execution() in tensorflow 1.x, in tensorflow 2, eager mode is set to be open default.
+##### 
 
 ## tensorflow-hub
 ##### RuntimeError: Exporting/importing meta graphs is not supported when eager execution is enabled. No graph exists when eager execution is enabled.
