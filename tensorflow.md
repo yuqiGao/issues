@@ -1,10 +1,17 @@
 ## tensor2tensor
+##### ImportError: cannot import name 'contrib'
+Not solve:
 ## tensorflow
 ##### Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.1: cannot open shared object file: No such file or directory
 Solved: conda install cudatoolkit=10.1
 ##### Could not load dynamic library 'libcudnn.so.7'; dlerror: libcudnn.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/share/local/slocal/lib:/usr/local/cuda/lib64:/share/local/lib:$LD_LIBRARY_PATH
 Not solve: conda install cudnn
 Solved: conda install -c anaconda cudnn
+##### ERROR: Cannot uninstall 'wrapt'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+Solved: pip install -U --ignore-installed wrapt enum34 simplejson netaddr [csdn](https://www.cnblogs.com/xiaowei2092/p/11025155.html)
+##### ModuleNotFoundError: No module named 'tensorflow.compat'
+Solved: upgrade tensorflow
+
 ##### Unable to Enable Tensorflows Eager execution: AttributeError: module 'tensorflow' has no attribute 'enable_eager_execution'
 Solved: tf.enable_eager_execution() in tensorflow 1.x, in tensorflow 2, eager mode is set to be open default.
 ##### 
