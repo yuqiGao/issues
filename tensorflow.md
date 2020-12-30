@@ -1,6 +1,9 @@
 ## tensor2tensor
 ##### ImportError: cannot import name 'contrib'
-Not solve:
+Temp solve: Just comment it and ignore
+##### grid_lip never registered with registry env_problems.
+Solved: Need to specify t2t_usr_dir
+#####  TypeError: Input 'y' of 'Sub' Op has type float32 that does not match type int32 of argument 'x'.
 ## tensorflow
 ##### Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.1: cannot open shared object file: No such file or directory
 Solved: conda install cudatoolkit=10.1
