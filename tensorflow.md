@@ -18,7 +18,8 @@ Solved: conda install -c anaconda cudnn
 Solved: pip install -U --ignore-installed wrapt enum34 simplejson netaddr [csdn](https://www.cnblogs.com/xiaowei2092/p/11025155.html)
 ##### ModuleNotFoundError: No module named 'tensorflow.compat'
 Solved: upgrade tensorflow
-
+##### UnknownError: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above. [Op:Conv2D] 
+Solving: change cudnn version
 ##### Unable to Enable Tensorflows Eager execution: AttributeError: module 'tensorflow' has no attribute 'enable_eager_execution'
 Solved: tf.enable_eager_execution() in tensorflow 1.x, in tensorflow 2, eager mode is set to be open default.
 ##### 
